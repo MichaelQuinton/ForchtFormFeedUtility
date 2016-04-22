@@ -4,3 +4,6 @@ C:\Users\michaelquinton\Documents\Visual Studio 2015\Projects\ForchtFormFeedUtil
 C:\Users\michaelquinton\Documents\Visual Studio 2015\Projects\ForchtFormFeedUtility\ForchtFormFeedUtility\obj\x64\Debug\ForchtFormFeedUtility.csprojResolveAssemblyReference.cache
 C:\Users\michaelquinton\Documents\Visual Studio 2015\Projects\ForchtFormFeedUtility\ForchtFormFeedUtility\obj\x64\Debug\ForchtFormFeedUtility.exe
 C:\Users\michaelquinton\Documents\Visual Studio 2015\Projects\ForchtFormFeedUtility\ForchtFormFeedUtility\obj\x64\Debug\ForchtFormFeedUtility.pdb
+C:\Users\michaelquinton\Documents\GitHub\ForchtFormFeedUtility\ForchtFormFeedUtility\bin\x64\Debug\ForchtFormFeedUtility.exe.config
+C:\Users\michaelquinton\Documents\GitHub\ForchtFormFeedUtility\ForchtFormFeedUtility\obj\x64\Debug\ForchtFormFeedUtility.exe
+C:\Users\michaelquinton\Documents\GitHub\ForchtFormFeedUtility\ForchtFormFeedUtility\obj\x64\Debug\ForchtFormFeedUtility.pdb
