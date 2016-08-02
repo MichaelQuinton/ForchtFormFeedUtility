@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForchtFormFeedUtility
+﻿namespace ForchtFormFeedUtility
 {
+    using System.IO;
+
     public static class DirectoryInfoExtentionMethods
     {
         /// <summary>
@@ -15,10 +10,10 @@ namespace ForchtFormFeedUtility
         /// <param name="di"></param>
         public static void ClearAll(this DirectoryInfo di)
         {
-            foreach (FileInfo file in di.GetFiles())
+            foreach (var file in di.GetFiles())
                 file.Delete();
 
-            foreach (DirectoryInfo dir in di.GetDirectories())
+            foreach (var dir in di.GetDirectories())
                 dir.Delete(true);
         }
     }

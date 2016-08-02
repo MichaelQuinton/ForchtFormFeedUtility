@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ForchtFormFeedUtility
+﻿namespace ForchtFormFeedUtility
 {
-    class ProgramPaths
+    using System.IO;
+
+    internal class ProgramPaths
     {
-        public string originalFullPath { get; private set; }
-        public string originalFileName { get; private set; }
-        public string assemblyDirectory { get; private set; }
-        public DirectoryInfo workingDirectory { get; private set; }
+        public string OriginalFullPath { get; }
+        public string OriginalFileName { get; private set; }
+        private string AssemblyDirectory { get; }
+        public DirectoryInfo WorkingDirectory { get; private set; }
 
         /// <summary>
         /// Uses the argument passed in to build all the pathing references needed
@@ -21,10 +16,10 @@ namespace ForchtFormFeedUtility
         /// <param name="arg"></param>
         public ProgramPaths(string arg)
         {
-            originalFullPath = arg;
-            originalFileName = Path.GetFileName(originalFullPath);
-            assemblyDirectory = Path.GetDirectoryName(System.Reflection.Assembly.GetAssembly(typeof(Program)).Location);
-            workingDirectory = new DirectoryInfo(assemblyDirectory + @"\Working\");
+            OriginalFullPath = arg;
+            OriginalFileName = Path.GetFileName(OriginalFullPath);
+            AssemblyDirectory = Path.GetDirectoryName(System.Reflection.Assembly.GetAssembly(typeof(Program)).Location);
+            WorkingDirectory = new DirectoryInfo(AssemblyDirectory + @"\Working\");
         }
     }
 }
